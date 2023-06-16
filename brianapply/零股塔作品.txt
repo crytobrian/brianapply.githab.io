@@ -1,0 +1,5 @@
+ 網址:https://project0502.s3.amazonaws.com/newpage(05111700)/Home(not+logged+in)/Home.html
+ 登入才有辦法看 隨意輸入8位數帳號10位數密碼
+ EPS的部分有串接API 要先按著個網址才會抓的到https://cors-anywhere.herokuapp.com/corsdemo
+ news部分尚未建構完成
+ 只有前端部分 所以後端的資料認證 都還沒有做出來
