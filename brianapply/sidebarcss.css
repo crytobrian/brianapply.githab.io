@@ -1,0 +1,122 @@
+/* 使排版可以左右分開 */
+.container-all{
+    display: flex;
+    align-items:stretch;
+}
+.container-right{
+    background-color: lavenderblush;
+    width: 100%;
+    height: 90%;
+    text-align: center;
+    padding-left: 17%;
+}
+
+#sidebar{
+    width: 250px;
+    height: 100%;
+    background-color: #2f323a;
+    color: white;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 100;
+    
+}
+#sidebar .profile_image{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin-bottom: 10px;
+
+}
+#sidebar ul p{
+    font-size: 35px;
+}
+#sidebar.active{
+    margin-left: -200px;
+}
+.collapse-btn{
+    position: relative;
+    top: 1%;
+    left: 210px;
+    background-color: #2f323a;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 5px;
+    margin-bottom: px;
+}   
+.collapse-btn:hover {
+    background-color: #4b4b4d;
+    transition: 0.4s;
+}
+#sidebar p{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 2px;
+    margin-bottom: 2px;
+}
+#sidebar ul li a{
+    padding: 10px;
+    margin: 2px;
+    font-style: 20px;
+    display: block;
+    text-decoration: none;
+}
+#sidebar ul li a:hover{
+    color: indigo;
+    background-color: #0bc0e0;
+    transition: 0.3s;
+}
+
+.fa{
+    float: right;
+    color: #ffffff;
+}
+
+ul ul li a{
+    background-color: #6924f3;
+    font-size: 13px;
+    color: #0bc0e0;
+}
+.but-color{
+    color: #ffffff;
+    font-size: 18px;
+}
+.SHOW{
+    text-align: justify;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    position: relative;
+
+}
+
+@media(max-width:600px) {
+    #sidebar{
+        margin-left: -100px;
+        width: 150px;
+    }
+    .collapse-btn{
+        position: relative;
+        top: 1%;
+        left: 110px;
+    }
+    #sidebar.active{
+        margin-left: 0px;
+    }
+    #sidebar ul p{
+        margin-right: 10px;
+        font-size: 12px;
+    }
+    h4{
+        font-size: 10px;
+        text-align: left;
+    }
+    .profile_image{
+        display: none;
+    }
+    .but-color{
+        color: #ffffff;
+        font-size: 10px;
+        text-align: left;
+    }
+}

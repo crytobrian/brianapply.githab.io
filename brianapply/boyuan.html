@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sidebar</title>
+    <link rel="stylesheet" href="sidebarcss.css">
+    <!-- JQ連結 -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="sidebarJS.js"></script>  
+    <!-- Funawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!--  -->
+    <!-- boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-all"> 
+
+        <!-- 左 -->
+        <div class="container-left">
+            <!-- 導覽 -->
+            <nav id="sidebar">
+                <center>
+                    <img src="slefimg.png" class="profile_image" alt="">
+                    <h4>Boyuan</h4>
+                </center>
+                <!-- 縮放自如的按鈕 -->
+                <span type="button" id="collapse" class="collapse-btn">
+                    <!-- <i class="fa-solid fa-bars fa-beat"></i> -->
+                    <i class="fa fa-align-left"></i>
+                </span>
+                <ul class="list-unstyled"><!-- list-unstyled 、data-bs-toggle="collapse"BT關鍵字  -->
+                    <p>Sebastian</p>
+                    <li>
+                        <a href="#sublist" data-bs-toggle="collapse" id="dropdown" class="home"><i class="fa fa-home fa-2x" aria-hidden="true" ></i><span>Home</span></a>
+                        <!-- 子連結 -->
+                        <!-- <ul id="sublist" class="list-unstyled collapse">
+                            <li>
+                                <a href="#">HTML</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li>
+                        <a href="#" id="ME"  class="option"><i class="fa fa-id-badge fa-2x" aria-hidden="true"></i><span  class="but-color">AboutMe</span></a>
+                    </li>
+                    <li>
+                        <a href="#"id="WORK"class="option"><i class="fa fa-grav fa-2x" aria-hidden="true"></i><span  class="but-color">WorkingOn</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="TIME" class="option"><i class="fa fa-book fa-2x" aria-hidden="true"></i><span class="but-color">StudyPlan</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="JOB"class="option"><i class="fa fa-building-o fa-2x" aria-hidden="true"></i><span class="but-color">DreamJob</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="EMOTIONS" class="option"><i class="fa fa-frown-o fa-2x" aria-hidden="true"></i><span class="but-color">Emotions</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="FEEL"><i class="fa fa-heart-o fa-2x" aria-hidden="true"></i><span class="but-color">CodingFeel</span></a>
+                    </li>
+                    <li>
+                        <a href="#" id="MESSAGE"class="option"><i class="fa fa-commenting fa-2x" aria-hidden="true"></i><span class="but-color">Message</span></a>
+                    </li>
+                </ul>
+                
+
+            </nav>
+        </div>
+        <!-- 右邊 -->
+        <div class="container-right">
+            <div class="container-fluid">
+                <h2 id=>Coding Framer</h2>
+                <hr>
+                
+                <div id="meShow"class="SHOW"style="font-size: 15px;">
+                    <h3>自我介紹</h3>
+                    我是趙博源，出生於民國74年，畢業於文化大學，大眾傳播學系。
+                    畢業後曾經在衛視電視台擔任過主控助理大約兩年，而後存了一些錢到日本去攻讀日文，在日本一邊學習日文一邊到超市工作，不僅僅學得了日語，也累積了一些工作經驗和一存下小筆錢。
+                    回台後曾經擔任過亞洲區外國業務領隊將近三年的時間，無奈疫情的影響下，而放棄這份令人稱羨的工作。
+                    正因如此，體會到被環境硬生生終結的工作，也反思自己除了語言、溝通以及解決問題的軟實力以外，硬核的實力也很重要，所以才想走軟體工程師。
+                </div>
+                
+                <div id="workShow"class="SHOW"style="font-size: 15px;">
+                    <h3>為了成為軟體工程師，曾做過什麼努力？</h3>
+                    目前在一家科技公司擔任作業員，晚上在補習班上課，但總覺得學習的東西太過於片段，沒有整體架構的學習，一邊工作也讓轉職的時間拉得太長。於是今年五月我申請留職停薪，為了是轉職成為軟體工程師做準備，自學時，看了很多彭老師在Youtube上的教學影片，而認識到WeHelp的培訓計畫，提出申請試試能否有機會進入培訓。先前的補習班也有作品的產出，但是網站的東西多是半成品，還有待加強，不太敢提出。
+                </div>
+                
+                <div id="timeShow"class="SHOW"style="font-size: 15px;">
+                    <h3>如果參與這個計畫，會怎麼安排學習時間？(學習時間)</h3>
+                    <div class="table-responsive-sm">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">星期一</th>
+                                    <th scope="col">星期二</th>
+                                    <th scope="col">星期三</th>
+                                    <th scope="col">星期四</th>
+                                    <th scope="col">星期五</th>
+                                    <th scope="col">星期六</th>
+                                    <th scope="col">星期日</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">上午</th>
+                                    <td>coding<br>8:00-10:00<br>
+                                    <b>會議10:00-12:00</b></td>
+                                    <td>coding<br>8:00-11:30</td>
+                                    <td>coding<br>8:00-11:30</td>
+                                    <td>coding<br>8:00-11:30</td>
+                                    <td>coding<br>8:00-11:30</td>
+                                    <td>coding<br>8:30-12:00</td>
+                                    <td>coding<br>8:30-12:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">下午</th>
+                                    <td>coding<br>13:30-18:00</td>
+                                    <td>coding<br>13:00-18:00</td>
+                                    <td>coding<br>13:00-18:00</td>
+                                    <td>coding<br>13:00-18:00</td>
+                                    <td>coding<br>13:00-18:00</td>
+                                    <td>FamilyTime</td>
+                                    <td>FamilyTime</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">晚上</th>
+                                    <td>coding<br>20:30-23:00</td>
+                                    <td>coding<br>20:30-23:00</td>
+                                    <td>coding<br>20:30-23:00</td>
+                                    <td>coding<br>20:30-23:00</td>
+                                    <td>coding<br>20:30-23:00</td>
+                                    <td>coding<br>20:00-23:00</td>
+                                    <td>Rest</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">coding time</th>
+                                    <td>9H</td>
+                                    <td>10H</td>
+                                    <td>10H</td>
+                                    <td>10H</td>
+                                    <td>10H</td>
+                                    <td>6H</td>
+                                    <td>3.5H</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div id="jobShow" class="SHOW" style="font-size: 15px;">
+                    <h3 >是否有想要加入的軟體公司？為什麼想加入該公司？</h3>
+                    基本上有機會進入軟體工程師的領域我都會試試看，不太設限。比較理想是想進入鈊象電子或是和泰聯網的後端工程師。鈊象電子:是因為遊戲產業很有興趣，遊戲產業雖然很爆肝，但會想嘗試看看，還有因為我也是股東所以對這公司獲利也很看好，覺得在這家公司會不錯。和泰聯網:車子產業一方面不會倒，和泰也是自己很喜歡的日系車，公司的硬體設備看起來還不錯，可以不用一直坐著工作，可以遠眺窗外的對眼睛很好。
+                    共通點:可以藉由工作得到工程師經驗，對於精進學習也會有幫助，且福利都蠻不錯的。
+                </div>
+                
+                <div id="emotionShow" class="SHOW" style="font-size: 15px;">
+                    <h3 >請描述一件讓你產生明顯負面情緒的事情，你如何處理該情緒？</h3>
+                    在日本念書的時候，由於前期日文很不好，打工的工作相當難找，由於自己也有生存上的經濟壓力，所以逼迫自己日文學好的壓力以及找不到工作無收入的壓力，人在國外無人可訴苦。抒壓的方式，於是去慢跑，尤其日本很多地方即便像我待的城市是名古屋，但仍有很多漂亮的公園，我常常會跑這些美麗的公園；或是常常走好幾個車站散步，相信工作會找上我，我也不需要煩惱經濟的來源。最後我不旦找到好的工作，也獲得學校的獎學金，這對我之後帶團面對壓力的心理素質上很有幫助，但困境中維持好的信念真的不容易，面對情緒課題仍需要學習。
+                </div>
+                
+                <div id="feelShow" class="SHOW"style="font-size: 15px;">
+                    <h3 >關於這份申請網頁，請分享一個你開發時的技術心得。</h3>
+                    網頁的申請，盡量憑自己在網路上所能找到的任何資源，包括除了很多彭老師教授的視訊影片外，自己也找了很多要達成這個網頁需要的效果，即使還不完美，但盡力的讓這個網頁看起來更好，過程雖也有些枯燥，遇到一些小問題也靠自己找到一些方法解決時，心裡也很開心跟踏實，也提高了想要繼續在這條路上努力的動力。
+                </div>
+                
+                <div id="messageShow" class="SHOW"style="font-size: 15px;">
+                    <h3 >其他想要對WeHelp說的事情？</h3>
+                    起初是因為在彭老師的教學影片，老師的教學用字遣詞精準到位，讓是小白的我都受益良多。而後，才注意到WeHelp的相關影片，也贊同彭老師培養工程師的一些特質和理念，而並非是只想著營利，讓我覺得蠻感動的，顯少培訓機構抱持著如此初衷，加上在看過第三屆的成果發表，學生所製作的作品，成果都相當優良；也給了這些學員有展現自己作品的平台，WeHelp真的提供給轉職人很大的幫助，很多人可以找到理想的工作，是良心事業，自己會不會上是另一回事，請彭老師繼續加油，辛苦了，也祝福WeHelp越來越好，學生都可以找到理想的工作。
+                </div>
+            </div>
+        </div>
+        
+    </div> 
+    
+     
+</body>
+</html>
